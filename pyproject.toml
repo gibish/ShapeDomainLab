@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shape-domain-lab"
+version = "1.0"
+description = "Reproducible synthetic geometric-shape dataset generator."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy==2.1.2",
+  "pillow==11.0.0",
+  "PySide6==6.11.1",
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib==3.10.5"]
+experiments = ["torch==2.8.0", "torchvision==0.23.0"]
+
+[project.scripts]
+shape-domain-lab = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

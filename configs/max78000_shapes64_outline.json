@@ -1,0 +1,59 @@
+{
+  "config_version": "1.0",
+  "output_dir": "datasets/shapes64_outline",
+  "image_size": 64,
+  "classes": [
+    "circle",
+    "rectangle",
+    "square",
+    "triangle"
+  ],
+  "train_count": 4000,
+  "val_count": 800,
+  "test_count": 800,
+  "file_format": "png",
+  "save_masks": true,
+  "seed": 42,
+  "render": {
+    "color_mode": "grayscale",
+    "background_range": [
+      160,
+      211
+    ],
+    "foreground_range": [
+      0,
+      51
+    ],
+    "background_color": [
+      180,
+      180,
+      180
+    ],
+    "foreground_color": [
+      0,
+      0,
+      0
+    ],
+    "line_width_range": [
+      1,
+      4
+    ],
+    "fill_mode": "outline",
+    "rotation_range": [
+      0.0,
+      360.0
+    ],
+    "scale_range": [
+      2.3,
+      3.2
+    ],
+    "center_offset_range": [
+      0.0,
+      16.0
+    ],
+    "edge_clipping": true,
+    "min_visible_ratio": 0.6,
+    "noise_level": 8,
+    "margin": 2
+  }
+}

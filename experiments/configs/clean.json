@@ -1,0 +1,27 @@
+{
+  "output_dir": "datasets/benchmarks/clean",
+  "image_size": 64,
+  "classes": ["circle", "octagon", "rectangle", "square", "triangle"],
+  "train_count": 1000,
+  "val_count": 200,
+  "test_count": 500,
+  "file_format": "png",
+  "save_masks": true,
+  "seed": 20260726,
+  "render": {
+    "color_mode": "grayscale",
+    "background_range": [160, 201],
+    "foreground_range": [0, 51],
+    "background_color": [180, 180, 180],
+    "foreground_color": [0, 0, 0],
+    "line_width_range": [1, 4],
+    "fill_mode": "outline_fill",
+    "rotation_range": [0.0, 0.0],
+    "scale_range": [1.0, 1.0],
+    "center_offset_range": [0.0, 0.0],
+    "edge_clipping": false,
+    "min_visible_ratio": 0.6,
+    "noise_level": 0,
+    "margin": 2
+  }
+}
